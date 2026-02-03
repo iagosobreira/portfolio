@@ -31,7 +31,7 @@ src/
 │   ├── sobreMi.astro       # Sección sobre mí
 │   ├── skills.astro        # Habilidades técnicas
 │   ├── Experiencia.astro   # Experiencia laboral
-│   ├── Curriculum.astro    # Curriculum/CV
+│   ├── Formacion.astro     # Formacion
 │   ├── Proyectos.astro     # Portfolio de proyectos
 │   └── Footer.astro        # Pie de página
 ├── layouts/
@@ -44,7 +44,8 @@ src/
 
 public/
 ├── images/                 # Imágenes del portafolio
-└── svg/                    # Iconos y SVGs
+├── svg/                    # Iconos y SVGs
+└── cv/                     # CV
 ```
 
 ## 🎯 Secciones del Portafolio
@@ -52,7 +53,7 @@ public/
 - **Sobre Mí** - Presentación personal
 - **Habilidades** - Tecnologías y competencias
 - **Experiencia** - Trayectoria profesional
-- **Currículum** - Descarga del CV
+- **Formación** - Trayectoria académica
 - **Proyectos** - Portafolio de trabajos realizados
 - **Contacto** - Información de contacto y redes sociales
 
