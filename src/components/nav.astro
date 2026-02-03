@@ -1,0 +1,56 @@
+---
+
+---
+<nav class=" bg-gray-700 p-5 w-full text-white">
+    <div class="flex justify-between">
+        <h1 class="select-none font-bold text-3xl" >IAGO SOBREIRA <span class="text-sm font-normal text-gray-400"> Desarrollador</span></h1>
+        <button id="boton-nav" class="md:hidden">☰</button>
+        <ul id="principal-menu" class="hidden md:flex gap-6 items-center">
+            <li class=" rounded-2xl hover:bg-gray-800 hover:block p-2"><a href="#sobreMi">Sobre Mi</a></li>
+            <li class=" rounded-2xl hover:bg-gray-800 hover:block p-2"><a href="#experiencia">Experiencia</a></li>
+            <li class=" rounded-2xl hover:bg-gray-800 hover:block p-2"><a href="#curriculum">Curriculum</a></li>
+            <li class=" rounded-2xl hover:bg-gray-800 hover:block p-2"><a href="#proyectos">Proyectos</a></li>
+            <li class=" rounded-2xl hover:bg-gray-800 hover:block p-2"><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <ul id="submenu" class="hidden flex flex-col mt-3 items-center gap-6">
+        <li><a href="#sobreMi">Sobre Mi</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+ 
+</nav>
+
+
+<script>
+    const btn=document.getElementById("boton-nav");
+    const submenu= document.getElementById("submenu");
+
+    btn?.addEventListener('click',()=>{
+        submenu?.classList.toggle('hidden');
+
+    });
+
+    window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+        submenu?.classList.add('hidden');
+    }
+});
+
+
+</script>
+
+<!--
+<section class="text-2xl bg-black text-white font-bold flex flex-col lg:flex-row p-10">
+    <div class="flex-1">
+        <p>IAGO SOBREIRA<span class="text-xs text-gray-400 ml-2.5"> Desarrollador</span></p>
+    </div>
+    <nav class="flex-1 flex justify-around flex-col  lg:flex-row mt-4 lg:mt-0">
+        <a class="hover:text-gray-500 hover:border-white lg:border-r-4 lg:pr-10 xl:pr-16 2xl:pr-20" href="#curriculum">Curriculum</a>
+        <a class="hover:text-gray-500 hover:border-white lg:border-r-4 lg:pr-10 xl:pr-16 2xl:pr-20" href="#sobreMi">Sobre Mi</a>
+        <a class="hover:text-gray-500" href="#proyectos">Proyectos</a>
+    </nav>
+</section> -->
