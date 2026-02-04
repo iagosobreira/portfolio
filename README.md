@@ -76,7 +76,3 @@ npm run astro    # CLI de Astro
 ## 🤝 Contribución
 
 Este es un proyecto personal. Si tienes sugerencias o mejoras, no dudes en contactarme.
-
-## 📄 Licencia
-
-MIT License - Puedes usar este código como referencia para tus propios proyectos.
